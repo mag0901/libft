@@ -6,7 +6,7 @@
 /*   By: mag <mag@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/21 15:39:03 by mag               #+#    #+#             */
-/*   Updated: 2026/11/06 20:41:29 by mag              ###   ########.fr       */
+/*   Updated: 2026/11/06 21:05:28 by mag              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,23 +78,3 @@ char	**ft_split(char const *s, char c)
 	res[j] = NULL;
 	return (res);
 }
-
-/* #include <stdio.h>
-
-int	main(int ac, char **av)
-{
-	char	**res;
-	int		i;
-
-	if (ac != 3)
-		return (1);
-	res = ft_split(av[1], *av[2]);
-	if (!res)
-		return (1);
-	i = 0;
-	while (res[i])
-		printf("%s\n", res[i++]);
-	printf("%s\n", res[i]);
-	return (freestr(res), 0);
-}
- */
